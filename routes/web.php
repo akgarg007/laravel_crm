@@ -42,3 +42,4 @@ Route::middleware(['auth'])->group(function(){
 });
 
 Route::get('admin/user_destroy/{user_id?}','AdminController@user_destroy');
+// Route::get('admin/add_user','AdminController@add_user')->name('admin/add_user');

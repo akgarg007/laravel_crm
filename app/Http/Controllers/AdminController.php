@@ -38,11 +38,17 @@ class AdminController extends Controller
             $user_delete = User::destroy($user_id);
             if($user_delete)
             {
-                return back()->with('success','User deleted.');
+                return back()->with('success','User and all related data deleted.');
             }
             else{
                 return back()->with('errors','User not deleted.');
             }
         }
     }
+
+    // public function add_user()
+    // {
+    //     return view('');
+    // }
+
 }
